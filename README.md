@@ -132,6 +132,67 @@ Non-functional requirements define *how well* the system performs. They refer to
 
 ---
 
+## 🧩 Use Case Diagrams
+
+### 📖 What Are Use Case Diagrams?
+
+A **Use Case Diagram** is a visual representation of how different users (called **actors**) interact with a system.  
+It illustrates the **functional requirements** of a system by showing what each user can do and how the system responds.
+
+In essence, a Use Case Diagram answers the question:  
+**“Who does what in the system?”**
+
+Use Case Diagrams are a key part of the **Requirement Analysis phase** in the **Software Development Life Cycle (SDLC)**.  
+They help capture the intended behavior of the system from the user's point of view.
+
+---
+
+### 💡 Benefits of Use Case Diagrams
+
+- **Clarity of Requirements:** Simplifies complex system behavior into easy-to-understand interactions.  
+- **User-Focused Design:** Highlights user goals and how the system supports them.  
+- **Improved Communication:** Bridges understanding between developers, designers, and stakeholders.  
+- **Scope Definition:** Defines system boundaries and identifies external dependencies.  
+- **Foundation for Design & Testing:** Serves as a base for creating detailed design and test cases.
+
+---
+
+### 🏨 Example: Booking Management System
+
+Below is an example **Use Case Diagram** illustrating how different actors interact with the booking system.
+
+![Use Case Diagram](./A_UML_use_case_diagram_in_black_and_white_depicts_.png)
+
+---
+
+### 🎭 Actors
+
+- **Guest/User:**  
+  Can search hotels, view details, make bookings, complete payments, cancel reservations, and write reviews.  
+
+- **Host:**  
+  Can list properties, update details, and manage availability.  
+
+- **Admin:**  
+  Can approve listings, manage users, and oversee system activities.  
+
+---
+
+### ⚙️ Key Use Cases
+
+| Use Case | Description |
+|-----------|-------------|
+| **Search Hotels** | Allows users to search for hotels by location, date, or filters. |
+| **View Hotel Details** | Displays detailed property information including images and pricing. |
+| **Book Room** | Enables users to reserve rooms for specific dates. |
+| **Make Payment** | Facilitates secure checkout and payment processing. |
+| **Cancel Booking** | Allows users to modify or cancel an existing booking. |
+| **Write Review** | Enables users to leave feedback for properties. |
+| **List Property** | Allows hosts to upload property details and manage listings. |
+| **Manage Users** | Admin feature to handle user accounts and permissions. |
+
+---
+
 ## 🧰 Techniques & Tools
 
 | Technique | Description |
@@ -147,19 +208,6 @@ Non-functional requirements define *how well* the system performs. They refer to
 - Lucidchart / Draw.io — for diagrams and flowcharts  
 - Figma / Miro — for UI mockups  
 - Google Docs / Confluence — for documentation and collaboration  
-
----
-
-## 🧮 Example: Requirement Analysis in Practice
-
-**Scenario:** Building a “Contact Us” form on a website
-
-| Step | Outcome |
-|------|----------|
-| *Requirement Gathering* | “Users want to reach support via an online form.” |
-| *Specification* | The form should have Name, Email, Subject, and Message fields. |
-| *Validation* | Stakeholders confirm the fields cover all contact needs. |
-| *Management* | Add CAPTCHA requirement later to reduce spam. |
 
 ---
 
