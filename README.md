@@ -26,7 +26,7 @@ The goal is to ensure **clarity, completeness, and alignment** between what stak
 
 ---
 
-## 🧠 Importance in the SDLC
+## 🧠 Why is Requirement Analysis Important?
 
 | Phase | Dependency on Requirement Analysis |
 |-------|------------------------------------|
