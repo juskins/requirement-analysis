@@ -161,7 +161,7 @@ They help capture the intended behavior of the system from the user's point of v
 
 Below is an example **Use Case Diagram** illustrating how different actors interact with the booking system.
 
-![Use Case Diagram](./use-case-diagram.png)
+![Use Case Diagram]((https://github.com/juskins/requirement-analysis/blob/main/alx-booking-uc.png?raw=true))
 
 ---
 
