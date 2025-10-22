@@ -193,6 +193,43 @@ Below is an example **Use Case Diagram** illustrating how different actors inter
 
 ---
 
+## ✅ Acceptance Criteria
+
+### 📘 What Are Acceptance Criteria?
+
+**Acceptance Criteria (AC)** are the predefined conditions that a software feature or system must meet to be accepted by stakeholders, clients, or end-users.  
+They act as a **bridge between requirements and testing**, ensuring that the implemented feature behaves exactly as expected.
+
+Acceptance Criteria define **“what success looks like”** for a feature and serve as a checklist for developers, QA testers, and product owners to confirm that a user story or requirement is complete.
+
+---
+
+### 💡 Importance of Acceptance Criteria in Requirement Analysis
+
+- **Clarifies Expectations:** Ensures everyone (developers, testers, and stakeholders) has a shared understanding of what needs to be built.  
+- **Improves Testability:** Helps QA teams design relevant test cases directly from business requirements.  
+- **Prevents Scope Creep:** Keeps development focused on clearly defined outcomes.  
+- **Enhances Quality Assurance:** Reduces ambiguity and helps identify edge cases early.  
+- **Supports Agile Development:** Acts as a definition of “done” for each user story or feature.
+
+---
+
+### 🛒 Example: Acceptance Criteria for the Checkout Feature
+
+**Feature:** Secure Checkout and Payment Processing for the Booking Management System  
+
+| ID | Acceptance Criterion | Description |
+|----|----------------------|--------------|
+| AC-01 | User can access the checkout page | After selecting a property and booking dates, the user is redirected to the checkout page. |
+| AC-02 | User can review booking details | The checkout page displays booking summary including property name, dates, number of guests, and total cost. |
+| AC-03 | Payment gateway integration | The system integrates with a secure payment provider (e.g., Stripe, PayPal) to process transactions. |
+| AC-04 | Validation of payment details | The system validates card or payment details before submission and displays appropriate error messages. |
+| AC-05 | Confirmation on successful payment | The user receives an on-screen confirmation and a booking reference number. |
+| AC-06 | Email notification | A confirmation email is sent to the user containing booking and payment details. |
+| AC-07 | Failed payment handling | If the payment fails, the system provides a clear error message and allows the user to retry. |
+
+---
+
 ## 🧰 Techniques & Tools
 
 | Technique | Description |
@@ -218,18 +255,6 @@ Below is an example **Use Case Diagram** illustrating how different actors inter
 - Prioritize requirements (e.g., *Must Have*, *Should Have*, *Could Have*).  
 - Maintain a **traceability matrix** to link requirements with design, code, and tests.  
 - Review frequently as business goals evolve.
-
----
-
-## 🚀 Conclusion
-
-Requirement Analysis forms the **foundation of successful software development**.  
-A well-executed analysis ensures that the final product:
-- Meets business and user expectations,  
-- Minimizes rework and costs, and  
-- Delivers genuine value.  
-
-> “A system built on unclear requirements is like a house built on sand — it might stand for a while, but it will eventually collapse.”
 
 ---
 
