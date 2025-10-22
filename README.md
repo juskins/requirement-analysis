@@ -73,7 +73,7 @@ A **poorly conducted requirement analysis** often leads to:
 
 ---
 
-## 📄 Types of Requirement
+## 📄 Types of Requirements
 
 In software engineering, requirements are generally classified into two broad categories: **Functional Requirements** and **Non-Functional Requirements**.  
 This section provides clear definitions and examples for each, tailored to the **Booking Management System** (inspired by Airbnb/OYO’s system architecture).
