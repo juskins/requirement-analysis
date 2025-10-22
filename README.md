@@ -44,7 +44,7 @@ A **poorly conducted requirement analysis** often leads to:
 
 ---
 
-## 🧩 Key Activities in Requirement Analysis
+## 🧩 Key Activities in Requirement Analysis.
 
 1. **Requirement Gathering:**  
    Collect raw information from stakeholders, end-users, and subject matter experts through:
@@ -73,13 +73,62 @@ A **poorly conducted requirement analysis** often leads to:
 
 ---
 
-## 📄 Types of Requirements
+## 📄 Types of Requirement
 
-| Type | Description | Examples |
-|------|--------------|-----------|
-| **Functional Requirements** | Describe *what* the system should do. | “The user should be able to log in using an email and password.” |
-| **Non-Functional Requirements** | Describe *how well* the system should perform. | “The system should load the dashboard within 2 seconds.” |
-| **Business Requirements** | Define the high-level business goals. | “Reduce manual data entry by 60%.” |
+In software engineering, requirements are generally classified into two broad categories: **Functional Requirements** and **Non-Functional Requirements**.  
+This section provides clear definitions and examples for each, tailored to the **Booking Management System** (inspired by Airbnb/OYO’s system architecture).
+
+---
+
+### ⚙️ Functional Requirements
+
+**Definition:**  
+Functional requirements describe *what the system should do*. They define the specific behaviors, actions, and features that enable users to interact with the application.
+
+**Examples (for the Booking Management Project):**
+- The system shall allow users to **search for properties** by location, date range, number of guests, and filters such as price or amenities.
+- The system shall allow users to **view detailed property information**, including images, host details, availability calendar, pricing, reviews, and booking options.
+- The system shall allow users to **create and confirm bookings**, select dates, enter payment details, and receive a confirmation receipt.
+- The system shall allow **hosts to list new properties**, upload images, define availability, and set pricing and rules.
+- The system shall provide **real-time availability checks** using cached data (e.g., Redis) before confirming bookings.
+- The system shall allow **user authentication and authorization**, supporting roles like Guest, Host, and Admin.
+- The system shall generate **notifications** for booking confirmations, cancellations, or changes.
+- The system shall allow **admins to monitor bookings and resolve disputes**.
+
+---
+
+### ⚡ Non-Functional Requirements
+
+**Definition:**  
+Non-functional requirements define *how well* the system performs. They refer to system qualities such as performance, scalability, reliability, and security rather than specific features.
+
+**Examples (for the Booking Management Project):**
+
+#### 🧠 Performance
+- Search results should load within **2 seconds** for 95% of user requests under normal load.
+- Cached queries (via Redis) for “recent booking history” should respond within **500 milliseconds**.
+
+#### ☁️ Scalability
+- The system should handle **1,000 concurrent booking requests** without service degradation.
+- The architecture should support **horizontal scaling** through microservices and distributed databases.
+
+#### 🔐 Security
+- All payment transactions must use **HTTPS** and comply with **PCI DSS** standards.
+- Passwords must be **hashed and salted** using secure algorithms such as bcrypt.
+- Sensitive user data must be encrypted both in transit and at rest.
+
+#### ⚙️ Reliability & Availability
+- The system must achieve **99.9% uptime** during peak hours.
+- Each booking transaction must follow **ACID principles**, ensuring complete or rollback behavior.
+
+#### 🧩 Maintainability & Extensibility
+- The system should adopt a **microservices architecture** to allow independent service updates and feature additions.
+- Source code should follow **modular, well-documented** structure to simplify maintenance.
+
+#### ♿ Usability & Accessibility
+- The user interface (UI) must comply with **WCAG 2.1 AA** accessibility standards.
+- The design should ensure a seamless experience on **mobile, tablet, and desktop devices**.
+
 
 ---
 
